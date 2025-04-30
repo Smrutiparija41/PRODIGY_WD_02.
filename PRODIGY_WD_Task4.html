@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Web Developer Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    /* Header Section */
+    header {
+      background: url('image.png') repeat center center;
+      background-size: cover;
+      color: rgb(0, 0, 0);
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Vertical center */
+      align-items: center;     /* Horizontal center */
+      text-align: center;
+      padding: 120px 20px 20px;
+      width:100%;
+
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0px;
+      margin-top: 40px; 
+      font-weight: bold;
+      font-family: 'Arial Black', sans-serif; /* Change this to any font you like */
+      letter-spacing: 2px; /* Optional: Adds space between letters */
+      text-transform: uppercase; /* Optional: Makes text all caps */
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #0072ff;
+      color: rgb(243, 234, 231);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #005bb5;
+    }
+
+    /* About Me Section */
+    #about {
+      background: #c2bdc0ec;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Skills Section */
+    #skills {
+      background: #7f7b7eec;
+      padding: 50px 20px;
+      text-align: center;
+     
+    }
+   
+
+    .skill {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .skill:hover {
+      transform: scale(1.05);
+    }
+
+    
+
+    .skill p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Projects Section */
+    #projects {
+      background: #c2bdc0ec;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .project {
+      margin: 20px;
+      display: inline-block;
+      width: 250px;
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .project h3 {
+      margin-top: 10px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: #333;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #contact input, #contact textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    #contact button {
+      padding: 10px 20px;
+      background: #0072ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    #contact button:hover {
+      background: #005bb5;
+    }
+    
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+    
+       /* Navbar Styles */
+       nav {
+        background: url('image.png') repeat center center;
+      top: 0;
+      width: 100%;
+      background-color: #eccad9;
+      padding: 15px 30px;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center; /* Center the logo */
+     
+    }
+
+    nav .logo {
+      color: rgb(4, 3, 3);
+      font-size: 3.5rem;
+      font-weight: bold;
+      font-family: 'Algerian', sans-serif; /* Change this to any font you like */
+      letter-spacing: 2px; /* Optional: Adds space between letters */
+      text-transform: uppercase; /* Optional: Makes text all caps */
+     
+    }
+    
+
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Portfolio</div>
+       
+      </nav>
+
+  <!-- Header Section -->
+  <header>
+
+    <h1>SMRUTI PARIJA</h1>
+    <p>Web Developer | JavaScript Expert | Full-Stack Enthusiast</p>
+    <a href="#about" class="btn">Learn More About Me</a>
+    
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <img src="myimg.jpg" alt="Your Photo">
+    <h2>ABOUT ME</h2>
+    <p>Hello, I'm Smruti Parija, currently pursuing B-Tech in Computer Science and Engineering at ITER — SOA | SIKSHA 'O' ANUSANDHAN. I am a passionate web developer with a love for turning ideas into beautifully interactive, responsive websites that deliver great user experiences. I specialize in both front-end and back-end development. I'm constantly learning and exploring new ideas.</p>
+    <p>My goal is to continue growing as a developer and work on exciting projects that challenge my skills.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <div class="skill">
+      <h3>HTML</h3>
+      <p>Experience building clean, semantic web pages using HTML5.</p>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <p>Skilled in creating responsive layouts and stunning user interfaces with CSS3.</p>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <p>Proficient in building interactive web applications using JavaScript, React, and Node.js.</p>
+    </div>
+    <div class="skill">
+      <h3>React</h3>
+      <p>Experienced with building modern, dynamic UIs with React.js.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project">
+      <img src="image2.webp" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>
+        A simple and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript. This project showcases logic implementation, user input handling, and dynamic DOM updates to create a fun two-player experience in the browser.
+      </p>
+      <a href="https://github.com/Smrutiparija41/PRODIGY_WD_O2/blob/main/Task3.html" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <img src="image3.png" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>
+        A responsive stopwatch web app built with HTML, CSS, and JavaScript. It features start, stop, and reset functionality with real-time time tracking. Designed with a clean UI for smooth user interaction and precise.
+      <p>
+      <a href="https://github.com/Smrutiparija41/PRODIGY_WD_O2/blob/main/Task2.html" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
